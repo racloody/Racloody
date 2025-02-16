@@ -83,14 +83,11 @@ nav ul li a .logo {
     margin: 10px; /* Margin between boxes */
 }
 
-.box1, .box3 {
+.box1, .box3, .box4 {
     flex: 1;
 }
 
 .box2 {
-    flex: 1;
-    margin-left: 20px; /* Ensure box2 is separated from box1 and box3 */
-}
-```
+    flex: 2;
 
-Ce CSS mettra à jour les boîtes 1 et 3 pour qu'elles soient empilées verticalement dans une colonne, et la boîte 2 pour qu'elle ait la hauteur combinée des boîtes 1 et 3. Assurez-vous de remplacer le contenu des boîtes par ce que vous souhaitez afficher.
+}
