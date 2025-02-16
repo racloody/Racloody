@@ -1,0 +1,96 @@
+/* Import Comfortaa font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+
+body {
+    font-family: 'Comfortaa', sans-serif;
+    background-color: #17141d; /* Updated background color */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #524d61; /* Updated background color */
+    padding: 15px;
+    border-radius: 18px; /* Added border radius */
+    margin: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul.left {
+    flex: 1;
+}
+
+nav ul.right {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul.left li a h1 {
+    margin: 0;
+    font-size: 24px; /* Adjust the font size as needed */
+    color: white;
+}
+
+nav ul li a .logo {
+    margin-right: 5px;
+    height: 24px; /* Adjust the height as needed */
+    width: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align the image vertically */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 15px;
+    margin: 40px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.box {
+    background-color: #524d61; /* Background color for boxes */
+    border-radius: 18px; /* Border radius for boxes */
+    padding: 20px; /* Optional padding for better spacing */
+    color: white; /* Text color */
+    margin: 10px; /* Margin between boxes */
+}
+
+.box1, .box3 {
+    flex: 1;
+}
+
+.box2 {
+    flex: 1;
+    margin-left: 20px; /* Ensure box2 is separated from box1 and box3 */
+}
+```
+
+Ce CSS mettra à jour les boîtes 1 et 3 pour qu'elles soient empilées verticalement dans une colonne, et la boîte 2 pour qu'elle ait la hauteur combinée des boîtes 1 et 3. Assurez-vous de remplacer le contenu des boîtes par ce que vous souhaitez afficher.
