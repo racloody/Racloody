@@ -348,6 +348,24 @@ footer a:hover {
     vertical-align: top; /* Align the boxes at the top */
 }
 
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.social-media-icon {
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+}
+
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
