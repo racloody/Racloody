@@ -127,7 +127,7 @@ nav ul li a .logo {
 .box {
     background-color: #524d61; /* Background color for boxes */
     border-radius: 18px; /* Border radius for boxes */
-    padding: 0px 20px 20px 20px; /* Padding inside boxes */
+    
     color: white; /* Text color */
     margin: 15px; /* Margin between boxes */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow */
@@ -138,17 +138,19 @@ nav ul li a .logo {
     display: flex;
     align-items: center;
     justify-content: center; /* Center the content horizontally */
-    margin-bottom: 10px; /* Space between header and content */
-    position: relative;
-    background-color: #524d61; /* Ensure the header is visible */
+    margin-bottom: 10px; /* Add margin at the bottom */
+    position: relative; /* Position the icon */
     width: 100%; /* Make the header full width */
-    padding: 10px; /* Add padding for better spacing */
+    padding: 10px 0 10px 0; /* Add padding for better spacing */
+    background-color: rgba(0,0,0,0.6); /* Ensure the header is visible */
     border-radius: 18px 18px 0 0; /* Match the box border radius */
+    z-index: 2; /* Ensure the header is above the image */
 }
 
 .box-header p {
     margin: 0;
     color: white;
+    text-align: center; /* Center the text */
 }
 
 .box-icon {
@@ -159,13 +161,49 @@ nav ul li a .logo {
     left: 10px; /* Position the icon on the left */
 }
 
+.box-content {
+    padding: 15px; /* Add padding for content */
+    align-self: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+}
+
+.software {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Space between software items */
+}
+
+.software-logo {
+    height: 50px; /* Adjust the height as needed */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Space between logo and info */
+    
+}
+
+.software-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.software-info h3 {
+    margin: 0;
+    font-size: 18px; /* Adjust the font size as needed */
+    color: white;
+}
+
+.software-info p {
+    margin: 5px 0 0 0;
+    font-size: 14px; /* Adjust the font size as needed */
+    color: white;
+}
+
 .box1, .box3, .box4 {
     flex: 1;
 }
 
 .box2 {
     flex: 2;
-    padding: 0 6% 6% 6%; /* Remove padding for box2 */
+    /* Remove padding for box2 */
 }
 
 .box-image {
@@ -189,16 +227,17 @@ nav ul li a .logo {
     overflow: hidden;
     display: flex;
     flex-direction: column; /* Ensure the header is above the carousel */
-    justify-content: center;
+
     align-items: center;
-    height: auto; /* Adjust the height to fit the image */
-    max-height: 500px; /* Set a maximum height for the carousel */
+    width: 100%; /* Reduce the width of the carousel */
 }
 
 .carousel {
+    position: relative;
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 50%;
+    height: 100%;
     overflow: hidden; /* Ensure inactive images are invisible */
 }
 
@@ -208,11 +247,12 @@ nav ul li a .logo {
 }
 
 .carousel-image {
-    min-width: 100%;
-    height: auto;
-    max-height: 100%;
-    object-fit: contain; /* Ensure the images are fully visible without distortion */
+    position: relative;
+    min-width: 100%; /* Ensure the images fit within the box */
+    max-height: 100%; /* Ensure the images fill the frame */
+    object-fit: contain; /* Ensure the images adapt to the frame */
     max-width: 100%; /* Ensure the images fit within the box */
+    aspect-ratio: 1 / 1; /* Maintain a 1:1 aspect ratio */
 }
 
 .carousel-button {
