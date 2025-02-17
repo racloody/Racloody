@@ -161,6 +161,7 @@ nav ul li a .logo {
 
 .box2 {
     flex: 2;
+    padding: 0 6% 6% 6%; /* Remove padding for box2 */
     
 }
 
@@ -168,12 +169,64 @@ nav ul li a .logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px; /* Adjust the height as needed */
+    max-width: 100%; /* Ensure the image does not exceed the box width */
+    height: auto; /* Maintain aspect ratio */
 }
+
 .box2 .box-image {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    max-width: 100%; /* Ensure the image does not exceed the box width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.box-carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    min-width: 100%;
+    height: auto;
+    max-height: 500px; /* Set a maximum height for the images */
+    object-fit: cover; /* Ensure the images cover the area without distortion */
+}
+
+.carousel-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-caption {
+    text-align: center;
+    margin-top: 10px;
+    color: white;
 }
 
 @media (max-width: 768px) {
@@ -249,6 +302,10 @@ nav ul li a .logo {
         width: 100%;
         max-width: 300px; /* Set a maximum width for the image */
     }
+
+    .carousel-image {
+        max-height: 300px; /* Adjust the maximum height for mobile */
+    }
 }
 
 @media (max-width: 480px) {
@@ -306,5 +363,9 @@ nav ul li a .logo {
         height: auto;
         width: 100%;
         max-width: 200px; /* Set a smaller maximum width for the image */
+    }
+
+    .carousel-image {
+        max-height: 200px; /* Adjust the maximum height for smaller screens */
     }
 }
