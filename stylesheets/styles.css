@@ -1,0 +1,550 @@
+/* Import Comfortaa font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+
+body {
+    font-family: 'Comfortaa', sans-serif;
+    background-color: #17141d; /* Updated background color */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #524d61; /* Updated background color */
+    padding: 15px;
+    border-radius: 18px; /* Added border radius */
+    margin: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul.left {
+    flex: 1;
+}
+
+nav ul.right {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul.left li a h1 {
+    margin: 0;
+    font-size: 24px; /* Adjust the font size as needed */
+    color: white;
+}
+
+nav ul li a .logo {
+    margin-right: 5px;
+    height: 24px; /* Adjust the height as needed */
+    width: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align the image vertically */
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: row; /* Change to row */
+    align-items: center; /* Center items vertically */
+    cursor: pointer;
+    padding: 10px; /* Add padding for better touch area */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.burger-menu:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Change background color on hover */
+}
+
+.burger-menu .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: transform 0.3s, opacity 0.3s; /* Smooth transition for transform and opacity */
+}
+
+.burger-menu.active .line:nth-child(1) {
+    transform: translateY(7px) rotate(45deg); /* Rotate the first line */
+}
+
+.burger-menu.active .line:nth-child(2) {
+    opacity: 0; /* Hide the second line */
+}
+
+.burger-menu.active .line:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg); /* Rotate the third line */
+}
+
+.burger-menu .logo {
+    height: 24px; /* Adjust the height as needed */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add some space between the icon and the text */
+}
+
+.burger-menu h1 {
+    margin-left: 10px; /* Add some space between the icon and the text */
+    font-size: 24px; /* Adjust the font size as needed */
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 15px;
+    margin: 40px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 300px; /* Minimum width for columns */
+    margin: 15px; /* Add margin between columns */
+}
+
+.box {
+    background-color: #524d61; /* Background color for boxes */
+    border-radius: 18px; /* Border radius for boxes */
+    color: white; /* Text color */
+    margin: 15px; /* Margin between boxes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow */
+    line-height: 1.5; /* Line height for better readability */
+}
+
+.box-header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+    margin-bottom: 10px; /* Add margin at the bottom */
+    position: relative; /* Position the icon */
+    width: 100%; /* Make the header full width */
+    padding: 10px 0 10px 0; /* Add padding for better spacing */
+    background-color: rgba(0,0,0,0.6); /* Ensure the header is visible */
+    border-radius: 18px 18px 0 0; /* Match the box border radius */
+    z-index: 2; /* Ensure the header is above the image */
+}
+
+.box-header p {
+    margin: 0;
+    color: white;
+    text-align: center; /* Center the text */
+}
+
+.box-icon {
+    margin-right: 10px; /* Space between icon and title */
+    height: 24px; /* Adjust the height as needed */
+    width: auto; /* Maintain aspect ratio */
+    position: absolute;
+    left: 10px; /* Position the icon on the left */
+}
+
+.box-content {
+    padding: 15px; /* Add padding for content */
+    align-self: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+}
+
+.software {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Space between software items */
+}
+
+.software-logo {
+    height: 50px; /* Adjust the height as needed */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Space between logo and info */
+    
+}
+
+.software-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.software-info h3 {
+    margin: 0;
+    font-size: 18px; /* Adjust the font size as needed */
+    color: white;
+}
+
+.software-info p {
+    margin: 5px 0 0 0;
+    font-size: 14px; /* Adjust the font size as needed */
+    color: white;
+}
+
+.box1, .box3, .box4 {
+    flex: 1;
+}
+
+.box2 {
+    flex: 2;
+    /* Remove padding for box2 */
+}
+
+.box-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%; /* Ensure the image fills the box */
+    padding: 2%; /* Maintain a 1:1 aspect ratio */
+    max-width: 100%; /* Ensure the image does not exceed the box width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.box2 .box-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; /* Ensure the image does not exceed the box width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.box-carousel {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Ensure the header is above the carousel */
+    justify-content: center;
+    align-items: center;
+    width: 50%; /* Set the width to half */
+    padding-top: 50%; /* Maintain a 1:1 aspect ratio */
+    height: 0; /* Ensure the height is controlled by padding-top */
+    margin: 0 auto; /* Center the carousel */
+}
+
+.carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    overflow: hidden; /* Ensure inactive images are invisible */
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    position: relative;
+    min-width: 100%; /* Ensure the images fit within the box */
+    max-height: 100%; /* Ensure the images fill the frame */
+    object-fit: contain; /* Ensure the images adapt to the frame */
+    max-width: 100%; /* Ensure the images fit within the box */
+    aspect-ratio: 1 / 1; /* Maintain a 1:1 aspect ratio */
+}
+
+.carousel-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-caption {
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+footer {
+    background-color: #524d61; /* Match the nav background color */
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 18px; /* Match the nav border radius */
+    margin: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Match the nav shadow */
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.portfolio-link {
+    color: white;
+    text-decoration: none;
+}
+
+.portfolio-link:hover {
+    text-decoration: underline;
+}
+
+.box-new {
+    background-color: #524d61; /* Background color for boxes */
+    border-radius: 18px; /* Border radius for boxes */
+    color: white; /* Text color */
+    margin: 15px; /* Margin between boxes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow */
+    line-height: 1.5; /* Line height for better readability */
+}
+
+.box-new .box-header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+    margin-bottom: 10px; /* Add margin at the bottom */
+    position: relative; /* Position the icon */
+    width: 100%; /* Make the header full width */
+    padding: 10px 0 10px 0; /* Add padding for better spacing */
+    background-color: rgba(0,0,0,0.6); /* Ensure the header is visible */
+    border-radius: 18px 18px 0 0; /* Match the box border radius */
+    z-index: 2; /* Ensure the header is above the image */
+}
+
+.box-new .box-content {
+    padding: 15px; /* Add padding for content */
+    align-self: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+}
+
+.box-carousel, .box-new {
+    width: 50%; /* Set the width to half */
+    display: inline-block; /* Display boxes side by side */
+    vertical-align: top; /* Align the boxes at the top */
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.social-media-icon {
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul.left, nav ul.right {
+        flex: none;
+        width: 100%;
+    }
+
+    nav ul.right {
+        justify-content: flex-start;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center; /* Center the boxes horizontally */
+        margin: 20px;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .box {
+        margin: 10px 0;
+        line-height: 1.3; /* Adjust line height for better readability */
+        width: 90%; /* Adjust the width to fit the screen */
+    }
+
+    .box2 {
+        order: -2; /* Move box2 to the top */
+    }
+
+    .box1 {
+        order: -1; /* Move box1 after box2 */
+    }
+
+    .box3 {
+        order: 0; /* Move box3 after box1 */
+    }
+
+    .box4 {
+        order: 1; /* Move box4 after box3 */
+    }
+
+    .box5 {
+        order: 2; /* Move box5 to the bottom */
+    }
+
+    .box2 .box-image {
+        height: auto;
+        width: 100%;
+        max-width: 300px; /* Set a maximum width for the image */
+    }
+
+    .box-carousel {
+        max-height: 300px; /* Adjust the maximum height for mobile */
+        height: auto; /* Adjust the height to fit the image */
+    }
+
+    .carousel-image {
+        max-height: 300px; /* Adjust the maximum height for mobile */
+    }
+
+    .box-header {
+        justify-content: center; /* Center the content horizontally */
+    }
+
+    .box-header p {
+        margin-left: 0; /* Remove left margin */
+        font-size: 18px; /* Adjust font size */
+    }
+
+    .box-icon {
+        height: 18px; /* Adjust the height */
+        width: auto; /* Maintain aspect ratio */
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    nav ul.left li a h1 {
+        font-size: 18px;
+    }
+
+    .box-header p {
+        font-size: 14px;
+    }
+
+    .box-image {
+        height: auto;
+        width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center; /* Center the boxes horizontally */
+        margin: 10px;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .box {
+        margin: 10px 0;
+        width: 90%; /* Adjust the width to fit the screen */
+    }
+
+    .box2 {
+        order: -2; /* Move box2 to the top */
+    }
+
+    .box1 {
+        order: -1; /* Move box1 after box2 */
+    }
+
+    .box3 {
+        order: 0; /* Move box3 after box1 */
+    }
+
+    .box4 {
+        order: 1; /* Move box4 after box3 */
+    }
+
+    .box5 {
+        order: 2; /* Move box5 to the bottom */
+    }
+
+    .box2 .box-image {
+        height: auto;
+        width: 100%;
+        max-width: 200px; /* Set a smaller maximum width for the image */
+    }
+
+    .box-carousel {
+        max-height: 200px; /* Adjust the maximum height for smaller screens */
+        height: auto; /* Adjust the height to fit the image */
+    }
+
+    .carousel-image {
+        max-height: 200px; /* Adjust the maximum height for smaller screens */
+    }
+
+    .box-header {
+        justify-content: center; /* Center the content horizontally */
+    }
+
+    .box-header p {
+        margin-left: 0; /* Remove left margin */
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .box-icon {
+        height: 16px; /* Adjust the height */
+        width: auto; /* Maintain aspect ratio */
+    }
+}

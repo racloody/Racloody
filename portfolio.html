@@ -6,185 +6,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/assets/racloody_insert.png">
     <link rel="stylesheet" href="/stylesheets/style-portfolio.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
-    </script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> <!-- Icons for portfolio -->
     <title>Racloody - Portfolio</title>
+    <meta name="description" content="Portfolio de Elouan GAÏOTTO">
+    <meta name="keywords" content="Racloody, Elouan GAÏOTTO, Portfolio, Graphisme, Maquettes, Logos, Musique">
+    <meta name="author" content="Elouan GAÏOTTO">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://racloody.fr/portfolio.html">
+    <link rel="icon" href="images/index_images/icon.png">
+    <script defer src="script.js"></script>
 </head>
 
 <body>
 
-    <div id="root">
-        <!-- Navbar -->
-        <nav>
-            <div class="burger-menu" id="burger-menu">
-                <img src="icon.png" alt="Logo" class="logo"> <!-- Replace burger icon with icon.png -->
-                <h1>Racloody</h1>
+
+    <nav>
+        <div class="burger-menu" id="burger-menu">
+            <img src="images/index_images/icon.png" alt="Logo" class="logo"> <!-- Replace burger icon with icon.png -->
+            <h1>Racloody</h1>
+        </div>
+        <ul class="left">
+            <li><a href="index.html"><img src="images/index_images/icon.png" alt="Logo" class="logo">
+                    <h1>Racloody</h1>
+                </a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+        <ul class="right">
+            <li><a href="https://cloud.racloody.fr" target="_blank">Cloud</a></li>
+            <li><a href="https://github.com/racloody" target="_blank">Github</a></li>
+            <li><a href="https://bento.me/racloody" target="_blank">Bento</a></li>
+        </ul>
+    </nav>
+    <!-- App -->
+    <div class="container">
+        <div class="column">
+            <div class="box box1">
+                <div class="box-header">
+                    <img src="images/circles.png" alt="Circles" class="box-icon">
+                    <p>mes_logos.html</p>
+                </div>
+                <div class="box-content">
+                    <div id="popup-bg">
+                        <div id="popup-content" class="popup">
+                            <div id="popup-close">
+                                <ion-icon name="close-circle"></ion-icon>
+                            </div>
+                            <img id="popup-img" src="#" alt="" />
+                        </div>
+                    </div>
+                    <div>
+                        <p>Voici quelques logos que j'ai réalisés pour certains projets personnels ou en équipe :</p>
+                    </div>
+                    <div id="grid">
+                        <div class="grid-item" id="logos/dring_time_big">
+                            <img src="images/logos/dring_time_big.jpg" alt="" class="grid-img" />
+                        </div>
+                        <div class="grid-item" id="logos/dring_time_text">
+                            <img src="images/logos/dring_time_text.jpg" alt="" class="grid-img" />
+                        </div>
+                        <div class="grid-item" id="logos/fish_canard">
+                            <img src="images/logos/fish_canard.jpg" alt="" class="grid-img" />
+                        </div>
+                        <div class="grid-item" id="logos/racloody">
+                            <img src="images/logos/racloody.jpg" alt="" class="grid-img" />
+                        </div>
+                        <div class="grid-item" id="logos/justepix">
+                            <img src="images/logos/justepix.jpg" alt="" class="grid-img" />
+                        </div>
+                        <div class="grid-item" id="logos/le_chien_rouge">
+                            <img src="images/logos/le_chien_rouge.jpg" alt="" class="grid-img" />
+                        </div>
+                        <div class="grid-item" id="logos/mr_raclette_big_logo">
+                            <img src="images/logos/mr_raclette_big_logo.jpg" alt="" class="grid-img" />
+                        </div>
+                        <div class="grid-item" id="logos/fyskatt">
+                            <img src="images/logos/fyskatt.jpg" alt="" class="grid-img" />
+                        </div>
+
+                    </div>
+                    <script src="app.js"></script>
+
+
+                </div>
+
+
+
+
+
+
             </div>
-            <ul class="left">
-                <li><a href="index.html"><img src="icon.png" alt="Logo" class="logo">
-                        <h1>Racloody</h1>
-                    </a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-            </ul>
-            <ul class="right">
-                <li><a href="https://cloud.racloody.fr" target="_blank">Cloud</a></li>
-                <li><a href="https://github.com/racloody" target="_blank">Github</a></li>
-            </ul>
-        </nav>
-        <!-- App -->
-        <div class="container">
-            <div class="column">
-                <div class="box box1">
-                    <div class="box-header">
-                        <img src="circles.png" alt="Circles" class="box-icon">
-                        <p>mes_logos.html</p>
-                    </div>
-                    <div class="box-content">
-                        <div id="popup-bg">
-                            <div id="popup-content" class="popup">
-                                <div id="popup-close">
-                                    <ion-icon name="close-circle"></ion-icon>
-                                </div>
-                                <img id="popup-img" src="#" alt="" />
-                            </div>
-                        </div>
-                        <div id="grid">
-                            <div class="grid-item" id="nature-1">
-                                <img src="/images/nature-1.jpg" alt="" class="grid-img" />
-                            </div>
-                            <div class="grid-item" id="nature-2">
-                                <img src="/images/nature-2.jpg" alt="" class="grid-img" />
-                            </div>
-                            <div class="grid-item" id="nature-3">
-                                <img src="/images/nature-3.jpg" alt="" class="grid-img" />
-                            </div>
-                            <div class="grid-item" id="nature-4">
-                                <img src="/images/nature-4.jpg" alt="" class="grid-img" />
-                            </div>
-                            <div class="grid-item" id="nature-5">
-                                <img src="/images/nature-5.jpg" alt="" class="grid-img" />
-                            </div>
-                            <div class="grid-item" id="nature-6">
-                                <img src="/images/nature-6.jpg" alt="" class="grid-img" />
-                            </div>
-                            <div class="grid-item" id="nature-7">
-                                <img src="/images/nature-7.jpg" alt="" class="grid-img" />
-                            </div>
-                            <div class="grid-item" id="nature-8">
-                                <img src="/images/nature-8.jpg" alt="" class="grid-img" />
-                            </div>
-                            <div class="grid-item" id="nature-9">
-                                <img src="/images/nature-9.jpg" alt="" class="grid-img" />
-                            </div>
-                            <div class="grid-item" id="nature-10">
-                                <img src="/images/nature-10.jpg" alt="" class="grid-img" />
-                            </div>
-                            <div class="grid-item" id="nature-11">
-                                <img src="/images/nature-11.jpg" alt="" class="grid-img" />
-                            </div>
-                            <div class="grid-item" id="nature-12">
-                                <img src="/images/nature-12.jpg" alt="" class="grid-img" />
-                            </div>
-                            <div class="grid-item" id="nature-13">
-                                <img src="/images/nature-13.jpg" alt="" class="grid-img" />
-                            </div>
-                        </div>
-                        <script src="/JS/app.js"></script>
-
-
-                    </div>
-
-
-
-
-
-
-                </div>
-                <div class="box box1">
-                    <div class="box-header">
-                        <img src="circles.png" alt="Circles" class="box-icon">
-                        <p>mes_logos.html</p>
-                    </div>
-                    <div class="box-content">
-                        <div id="popup-bg">
-                            <div id="popup-content" class="popup">
-                                <div id="popup-close">
-                                    <ion-icon name="close-circle"></ion-icon>
-                                </div>
-                                <img id="popup-img" src="#" alt="" />
-                            </div>
-                        </div>
-                        <div id="grid">
-                            <div class="grid-item" id="nature-1">
-                                <img src="/images/nature-1.jpg" alt="" class="grid-img" />
-                            </div>
-                            <div class="grid-item" id="nature-2">
-                                <img src="/images/nature-2.jpg" alt="" class="grid-img" />
-                            </div>
-                            <div class="grid-item" id="nature-3">
-                                <img src="/images/nature-3.jpg" alt="" class="grid-img" />
-                            </div>
-                            <div class="grid-item" id="nature-4">
-                                <img src="/images/nature-4.jpg" alt="" class="grid-img" />
-                            </div>
-                            <div class="grid-item" id="nature-5">
-                                <img src="/images/nature-5.jpg" alt="" class="grid-img" />
-                            </div>
-                            <div class="grid-item" id="nature-6">
-                                <img src="/images/nature-6.jpg" alt="" class="grid-img" />
-                            </div>
-                            <div class="grid-item" id="nature-7">
-                                <img src="/images/nature-7.jpg" alt="" class="grid-img" />
-                            </div>
-                            <div class="grid-item" id="nature-8">
-                                <img src="/images/nature-8.jpg" alt="" class="grid-img" />
-                            </div>
-                            <div class="grid-item" id="nature-9">
-                                <img src="/images/nature-9.jpg" alt="" class="grid-img" />
-                            </div>
-                            <div class="grid-item" id="nature-10">
-                                <img src="/images/nature-10.jpg" alt="" class="grid-img" />
-                            </div>
-                            <div class="grid-item" id="nature-11">
-                                <img src="/images/nature-11.jpg" alt="" class="grid-img" />
-                            </div>
-                            <div class="grid-item" id="nature-12">
-                                <img src="/images/nature-12.jpg" alt="" class="grid-img" />
-                            </div>
-                            <div class="grid-item" id="nature-13">
-                                <img src="/images/nature-13.jpg" alt="" class="grid-img" />
-                            </div>
-                        </div>
-                        <script src="/JS/app.js"></script>
-
-
-                    </div>
-
-
-
-
-
-
+            <div class="box box1">
+                <div class="box-header">
+                    <img src="images/circles.png" alt="Circles" class="box-icon">
+                    <p>mes_maquettes.html</p>
                 </div>
 
-
-                <div class="box box1">
-                    <div class="box-header">
-                        <img src="circles.png" alt="Circles" class="box-icon">
-                        <p>ma_musique.wav</p>
+                <div class="box-content">
+                    <div id="popup-bg">
+                        <div id="popup-content" class="popup">
+                            <div id="popup-close">
+                                <ion-icon name="close-circle"></ion-icon>
+                            </div>
+                            <img id="popup-img" src="#" alt="" />
+                        </div>
                     </div>
-                    <div class="box-content">
-                        <iframe style="border-radius:12px"
-                            src="https://open.spotify.com/embed/playlist/1rMHCNqKY79gziMevyFG9Q?utm_source=generator"
-                            width="100%" height="352" frameBorder="0" allowfullscreen=""
-                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                            loading="lazy"></iframe>
-
+                    <div>
+                        <p>Voici quelques maquettes que j'ai réalisées pour des projets tels que des sites web ou des
+                            applications :</p>
+                    </div>
+                    <div id="grid">
+                        <div class="grid-item" id="/maquettes/Maquette Menu Borderwars v1">
+                            <img src="images/maquettes/Maquette Menu Borderwars v1.jpg" alt="" class="grid-img" />
+                        </div>
+                        <div class="grid-item" id="maquettes/website">
+                            <img src="images/maquettes/website.jpg" alt="" class="grid-img" />
+                        </div>
+                        <div class="grid-item" id="maquettes/ynis_client">
+                            <img src="images/maquettes/ynis_client.jpg" alt="" class="grid-img" />
+                        </div>
 
                     </div>
+                    <script src="app2.js"></script>
+
+
                 </div>
 
 
@@ -194,6 +140,22 @@
 
             </div>
 
+
+            <div class="box box1">
+                <div class="box-header">
+                    <img src="images/circles.png" alt="Circles" class="box-icon">
+                    <p>ma_musique.wav</p>
+                </div>
+                <div class="box-content">
+                    <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/playlist/1rMHCNqKY79gziMevyFG9Q?utm_source=generator"
+                        width="100%" height="500" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+
+
+                </div>
+            </div>
 
 
 
@@ -201,21 +163,28 @@
 
 
         </div>
-        <footer>
-            <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title"
-                    rel="cc:attributionURL" href="http://racloody.fr">Racloody.fr</a>
-                by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="http://racloody.fr">Elouan
-                    GAÏOTTO</a> est sous license <a
-                    href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank"
-                    rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img
-                        style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
-                        src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img
-                        style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
-                        src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img
-                        style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
-                        src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""></a></p>
-            <p>Contact: <a href="mailto:contact@racloody.fr">contact@racloody.fr</a></p>
-        </footer>
+
+
+
+
+
+
+
+    </div>
+    <footer>
+        <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title"
+                rel="cc:attributionURL" href="http://racloody.fr">Racloody.fr</a>
+            by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="http://racloody.fr">Elouan
+                GAÏOTTO</a> est sous license <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1"
+                target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img
+                    style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                    src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img
+                    style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                    src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img
+                    style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                    src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""></a></p>
+        <p>Contact: <a href="mailto:contact@racloody.fr">contact@racloody.fr</a></p>
+    </footer>
 
 
 
