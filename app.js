@@ -6,7 +6,7 @@ const openPopup = (e) => {
   let gridItemClicked = e.target.closest(".grid-item");
   let clickedImageName = gridItemClicked.id.replace(/\\/g, '/'); // Ensure compatibility with folder structure
   popupBg.classList.add("active");
-  popupImg.src = `images/${clickedImageName}.jpg`; // Corrected path
+  popupImg.src = `images/${clickedImageName}.webp`; // Corrected path
 };
 
 const closePopup = () => {
