@@ -2,7 +2,7 @@
 
 Ce repo est celui du site [Racloody](https://racloody.fr), il est composé d’une page d’accueil qui fait office de CV et d’un Portfolio qui montre mes créations graphiques et musicales. Il est Fait en HTML/CSS avec un peu de JavaScript. Il est fait à partir de cette maquette :
 
-![Maquette du site, réalisée sur Photoshop](images/maquettes/website.jpg)
+![Maquette du site, réalisée sur Photoshop](images/maquettes/website.webp)
 
 Maquette du site, réalisée sur Photoshop
 
