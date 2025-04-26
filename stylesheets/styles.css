@@ -55,7 +55,7 @@ nav ul.left li a h1 {
     color: white;
 }
 
-nav ul li a .logo {
+nav ul li a .logo,.logo-mobile {
     margin-right: 5px;
     height: 24px; /* Adjust the height as needed */
     width: auto; /* Maintain aspect ratio */
@@ -64,7 +64,7 @@ nav ul li a .logo {
 
 .burger-menu {
     display: none;
-    flex-direction: row; /* Change to row */
+       
     align-items: center; /* Center items vertically */
     cursor: pointer;
     padding: 10px; /* Add padding for better touch area */
@@ -390,6 +390,9 @@ footer a:hover {
         display: flex;
     }
 
+    .logo {
+        display: none; /* Hide the logo in mobile view */
+    }
     nav ul {
         display: none;
         flex-direction: column;
