@@ -17,3 +17,10 @@ allGridItems.forEach((el) => el.addEventListener("click", openPopup));
 
 popupImg.addEventListener("click", (e) => e.stopPropagation());
 popupBg.addEventListener("click", closePopup);
+
+// Close popup with the Escape key
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && popupBg.classList.contains("active")) {
+    closePopup();
+  }
+});
