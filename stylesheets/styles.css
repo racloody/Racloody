@@ -45,9 +45,7 @@ nav ul li a {
     align-items: center;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
+
 
 nav ul.left li a h1 {
     margin: 0;
@@ -61,7 +59,15 @@ nav ul li a .logo,.logo-mobile {
     width: auto; /* Maintain aspect ratio */
     vertical-align: middle; /* Align the image vertically */
 }
+.nav_elt {
+    transition: transform -0.3s ease; /* Smooth transition for scaling */
+}
 
+.nav_elt :hover {
+
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+    transform: scale(1.1); /* Scale up on hover */
+}
 .burger-menu {
     display: none;
        
